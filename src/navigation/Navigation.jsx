@@ -8,7 +8,7 @@ const Navigation = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/detail" element={<DetailPage />} />
+        <Route path="/detail/:name" element={<DetailPage />} />
         <Route path="/loading" element={<Loading />} />
       </Routes>
     </BrowserRouter>
