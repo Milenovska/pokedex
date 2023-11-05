@@ -1,0 +1,9 @@
+.container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px 80px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
