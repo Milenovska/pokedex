@@ -1,9 +1,17 @@
-.container {
-  justify-content: center;
+.homepage {
+  justify-content: flex-start;
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 50px 80px;
-  margin-left: 120px;
-  margin-right: 120px;
+  width: 100vw;
+  min-height: 100svh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 4rem;
 }

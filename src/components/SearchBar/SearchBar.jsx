@@ -1,10 +1,15 @@
 import "./SearchBar.css";
 
-const SearchBar = () => {
+const SearchBar = ({ onChange }) => {
   return (
-    <div className="search_bar">
-      <input />
-      <button> Hledej</button>
+    <div>
+      <input
+        className="search_bar"
+        onChange={(e) => {
+          onChange(e.target.value);
+        }}
+      />
+      {/*<button> Hledej</button>*/}
     </div>
   );
 };

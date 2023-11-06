@@ -9,12 +9,13 @@ const DetailPage = () => {
   return (
     <div className="detail_page">
       <h1> {state.name} </h1>
-      <img src={state.sprites.front_default} />
-      <img src={state.sprites.back_default} />
-      <p>Height: {state.height}</p>
-      <p>Weight: {state.weight}</p>
-      <p>Base experience: {state.base_experience}</p>
-      <p>Moves: {state.moves.map((move) => move.move.name)}</p>
+      <img src={state.sprites.front_default} height={"250px"} width={"250px"} />
+      <img src={state.sprites.back_default} height={"250px"} width={"250px"} />
+      <h3>Height:</h3> <p> {state.height} g </p>
+      <h3>Weight: </h3> <p> {state.weight} cm </p>
+      <h3>Base experience: </h3>
+      <p> {state.base_experience}</p>
+      <h3>Moves:</h3> <p> {state.moves.map((move) => move.move.name)}</p>
     </div>
   );
 };
