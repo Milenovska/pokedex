@@ -3,4 +3,9 @@
   width: 240px;
   border: 2px solid black;
   border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

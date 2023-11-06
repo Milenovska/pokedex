@@ -19,7 +19,7 @@ const Card = ({ name, url }) => {
 
   return (
     <div className="card">
-      <img src={data.sprites.front_default} />
+      <img src={data.sprites.front_default} height={"130px"} width={"130px"} />
       {name}
       <Button label={"Open detail"} onClick={handleDetailNavigate} />
     </div>
