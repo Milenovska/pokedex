@@ -1,12 +1,10 @@
 import useApiFetch from "../../apiHandler/customHookApiCall";
-import Button from "../../components/Button/Button";
 import Card from "../../components/Card/Card";
 import SearchBar from "../../components/SearchBar";
 import "./HomePage.css";
 import { useState } from "react";
 
 const initialUrl = `https://pokeapi.co/api/v2/pokemon/`;
-//const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${id}`;
 
 const HomePage = () => {
   const { data, isLoad } = useApiFetch(initialUrl);
@@ -34,7 +32,6 @@ const HomePage = () => {
           <Card name={pokemon.name} url={pokemon.url} key={pokemon.name} />
         ))}
       </div>
-      <Button label={"Next"} />
     </div>
   );
 };
