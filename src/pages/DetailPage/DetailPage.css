@@ -1,16 +1,56 @@
-h1 {
-  justify-content: center;
-  align-items: center;
+.detail_container {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
 }
 
-h3 {
-  justify-content: center;
-  align-items: center;
-  display: flex;
+.pokemon_name {
+  width: 100%;
+  text-align: center;
 }
-p {
+
+.detail_page {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.texts {
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.pokemon_information {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 4px;
+}
+.information_data {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 2px;
+}
+
+.pokemon_images {
+  justify-content: flex-start;
+  align-items: left;
+  display: flex;
+  margin-right: 10%;
+  margin-top: 50px;
+
+  & > img {
+    height: 60%;
+  }
+}
+
+.image_back {
+  padding-top: 50%;
 }
